@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>日本語だけカウントするツール【ノベルゲー文字数】</title>
+    <meta content="日本語だけを簡単にカウントするツールです。ノベルゲーノベルゲーのスクリプトからセリフの分量を概算するのに便利です" name="description">
+    
+    <link rel="stylesheet" href="jptxtCounter/jptxtCounter.css">
+    <link rel="shortcut icon" href="jptxtCounter/jptxtCounter_icon.png">
+    <script type="text/javascript" src="jptxtCounter/jptxtCounter.js"></script>
+  </head>
+  <body>
+    <hr color="#FF8000" size="5">
+    <h1>日本語だけカウントするツール ver1.0</h1>
+    <p style="text-align: right">製作者：Arutaka　ホームページ：
+      <a href="https://pow6.net" target="_blank">https://pow6.net</a>
+    </p>
+    <hr size="3">
+    <div class="intro">
+    <p>　日本語だけを簡単にカウントします。
+      <br>　ノベルゲーの開発でスクリプトの開発をしながらセリフも作っている人向け。
+      <br>　とりあえず日本語のセリフとかをば～～！と数えるのに使えます。要望があればホームページのお問い合わせからどうぞ！
+    </p>
+    </div>
+    <div class="box">使い方：
+      <br>　１．変換したい文章を入力
+      <br>　２．『日本語をカウントする』をクリック
+      <br>　※コメント行を無視したい→例外行文字に改行区切りで入力する
+    </div>
+      <form method="post" action="jptxtCounter.cgi">
+        <p><button type="submit" class="square_btn">日本語をカウントする</button></p>
+        <p><textarea class="ef" name="escapeWord" id="escapeWord" cols="15" rows="3" placeholder="(任意)例外行文字"></textarea></p>
+        <p><textarea class="ef" name="originText" id="originText" cols="100" rows="12" placeholder="カウントしたい文章を入力"></textarea></p>
+        <span class="focus_bg"></span>
+      </form>
+  </body>
+</html>
